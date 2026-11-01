@@ -84,7 +84,7 @@ jobs:
     if: always() && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           pattern: smoke-*
       - name: Report what broke
